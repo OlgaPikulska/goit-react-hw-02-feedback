@@ -43,11 +43,9 @@ export class Feedback extends Component {
     countPositiveFeedbackPercentage = () => {
         const totalFeedback = this.state.good + this.state.neutral + this.state.bad;
 
-        const positiveFeedback = (this.state.good * 100 / totalFeedback);
+        const positiveFeedback = Math.round(this.state.good * 100 / totalFeedback);
 
-        console.log(positiveFeedback)
-        console.log(totalFeedback)
-        return positiveFeedback;
+        return totalFeedback === 0 ? totalFeedback : positiveFeedback;
     }
 
     render() {

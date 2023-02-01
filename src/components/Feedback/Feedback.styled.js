@@ -18,6 +18,14 @@ border: 1px solid #A5B2C5;
 border-radius: 4px;
 padding: 5px 8px 5px 8px;
 box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.28);
+cursor: pointer;
+
+:hover {
+    background-color: rgb(79, 158, 215);
+}
+:focus {
+    background-color: rgb(79, 158, 215);
+}
 `
 export const StatisticsWrapper = styled.div`
 display: flex;
@@ -28,4 +36,5 @@ gap: 5px;
 
 export const StatisticsItem = styled.span`
 font-weight: 600;
+
 `
