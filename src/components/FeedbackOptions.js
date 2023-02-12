@@ -19,12 +19,9 @@ padding: 5px 8px 5px 8px;
 box-shadow: 1px 2px 2px 0px rgba(0,0,0,0.28);
 cursor: pointer;
 
-:hover {
+&:hover{
     background-color: rgb(79, 158, 215);
-}
-:focus {
-    background-color: rgb(79, 158, 215);
-}
+};
 `
 
 export class FeedbackOptions extends Component {
