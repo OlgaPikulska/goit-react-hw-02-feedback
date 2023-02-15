@@ -7,7 +7,6 @@ import { Notification } from "./Notification";
 
 export class App extends Component {
   static defaultProps = {
-    step: 1,
     good: 0,
     neutral: 0,
     bad: 0,
@@ -22,7 +21,7 @@ export class App extends Component {
   handleFeedback = (e) => {
     const { name } = e.currentTarget;
     this.setState((state, props) => ({
-      [name]: state[name] + props.step,
+      [name]: state[name] + 1,
     }))
   }
 
